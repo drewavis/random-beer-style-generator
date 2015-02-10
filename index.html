@@ -67,7 +67,7 @@
 		
 		function getRandomDescription(style){
 
-		  $.getJSON("http://en.wikipedia.org/w/api.php?action=query&generator=random&grnnamespace=0&prop=extracts&exchars=500&format=json&callback=?", function (data) {
+		  $.getJSON("https://en.wikipedia.org/w/api.php?action=query&generator=random&grnnamespace=0&prop=extracts&exchars=500&format=json&callback=?", function (data) {
 		    // console.log(data.query.pages);
 		    var objName = Object.keys(data.query.pages)[0];	    
 		    var article=data.query.pages[objName].extract;
